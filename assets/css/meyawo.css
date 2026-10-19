@@ -12087,7 +12087,9 @@ pre .code {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 550px;
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
 }
 
 .header .header-content .header-title .up {
@@ -12156,9 +12158,6 @@ pre .code {
 @media (max-width: 991.98px) {
   .header {
     background-size: cover;
-  }
-  .header-content {
-    padding-left: calc(100% / 5) !important;
   }
 }
 

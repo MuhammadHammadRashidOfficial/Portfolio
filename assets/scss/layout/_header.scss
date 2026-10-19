@@ -22,7 +22,9 @@
     .header-content {
         margin-top: 20px;
         flex-grow: 1;
-        max-width: 550px;
+        width: 100%;
+        max-width: 850px;
+        text-align: center;
         
         .header-title {
             
@@ -86,8 +88,4 @@
         background-size: cover;
     }
 
-    .header-content {
-        padding-left: calc(100% / 5) !important;
-    }
 }
-
