@@ -12,24 +12,23 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// smooth scroll
-$(document).ready(function(){
-    $(".navbar .nav-link").on('click', function(event) {
-
-        if (this.hash !== "") {
-
-            event.preventDefault();
-
-            var hash = this.hash;
-
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 700, function(){
-                window.location.hash = hash;
-            });
-        } 
-    });
-});
+/*
+ * Legacy smooth-scroll handler targets `.navbar .nav-link`, but the current
+ * navigation uses `.custom-navbar .link`.
+ */
+// $(document).ready(function(){
+//     $(".navbar .nav-link").on('click', function(event) {
+//         if (this.hash !== "") {
+//             event.preventDefault();
+//             var hash = this.hash;
+//             $('html, body').animate({
+//                 scrollTop: $(hash).offset().top
+//             }, 700, function(){
+//                 window.location.hash = hash;
+//             });
+//         }
+//     });
+// });
 
 // navbar toggle
 $('#nav-toggle').click(function(){
@@ -37,18 +36,18 @@ $('#nav-toggle').click(function(){
     $('ul.nav').toggleClass('show');
 });
 
-$(document).ready(function() {
-    // Hide rows 3 and onwards initially
-    $('#portfolio .row:gt(2)').hide();
-
-    $('#view-more-btn').click(function() {
-        // Toggle visibility of rows 3 and onwards
-        $('#portfolio .row:gt(2)').toggle();
-        $('#portfolio .row').show();
-        // Hide the button
-        $(this).hide();
-    });
-});
+/*
+ * Legacy portfolio "View More" handler; the portfolio no longer has an active
+ * view-more control, and its projects are displayed together.
+ */
+// $(document).ready(function() {
+//     $('#portfolio .row:gt(2)').hide();
+//     $('#view-more-btn').click(function() {
+//         $('#portfolio .row:gt(2)').toggle();
+//         $('#portfolio .row').show();
+//         $(this).hide();
+//     });
+// });
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -69,7 +68,6 @@ function topFunction() {
 }
 
 // Languages I know slider
-
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.slider-track');
     const slides = Array.from(track.children);
@@ -88,4 +86,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 10);
     });
 });
-
