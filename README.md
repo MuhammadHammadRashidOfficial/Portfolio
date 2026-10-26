@@ -1,15 +1,50 @@
-# Hammad Rashid | Portfolio
+# Muhammad Hammad Rashid — Portfolio
 
-QA Engineer with 5+ years of experience testing web and mobile applications.
+Personal portfolio for Muhammad Hammad Rashid, a Senior Software QA Engineer with around five years of experience testing web and mobile applications.
 
-## Visit
+**Live site:** [muhammadhammadrashidofficial.github.io/Portfolio](https://muhammadhammadrashidofficial.github.io/Portfolio/)
 
-[Open the portfolio](https://muhammadhammadrashidofficial.github.io/Portfolio/)
+## About the site
 
-## About
+The portfolio presents professional experience and capabilities through these sections:
 
-Explore my background, education, certifications, services, and selected projects. The site also includes my CV, testing tools and technologies, blog, and contact links.
+- About and professional services
+- Education and certifications
+- Selected projects
+- Programming languages and testing tools
+- Blog and contact links
 
-## View locally
+The tools section includes Cypress, Selenium, Playwright, Apache JMeter, Postman, Proxyman, PyTest, Tuskr, ESLint, Prettier, GitHub, and Figma.
 
-Open `index.html` in a browser.
+## Built with
+
+- HTML
+- CSS, including the Meyawo stylesheet and its SCSS sources
+- JavaScript with jQuery and Bootstrap
+
+This is a static site and does not require a package installation or build step.
+
+## Preview locally
+
+You can open `index.html` directly in a browser. To preview it over a local HTTP server instead, run this from the repository root:
+
+```sh
+python3 -m http.server 8000
+```
+
+Then visit [http://localhost:8000](http://localhost:8000).
+
+## Project structure
+
+```text
+.
+├── index.html                 # Portfolio page
+├── components.html            # Meyawo component showcase
+└── assets/
+    ├── css/meyawo.css         # Site styles
+    ├── js/meyawo.js           # Page interactions
+    ├── imgs/                  # Images and tool logos
+    ├── files/                 # Supporting files
+    ├── scss/                  # SCSS sources
+    └── vendors/               # Bootstrap, jQuery, and Themify Icons
+```
